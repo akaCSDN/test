@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+	<script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <style type="text/css">
+        table{
+            border: 1px solid black;
+        }
+        table th,td{
+            /* border: 1px solid black; */
+            width: 240px;
+            height: 40px;
+            text-align: center;
+        }
+        table tr:nth-child(odd){
+            background-color: rgba(167, 167, 167, 0.147);
+        }
+        
+        
+    </style>
+</head>
+<body>
+    <div class="dropdown">
+        <button type="button" class="btn dropdown-toggle" id="dropdownMenu1" 
+                data-toggle="dropdown">
+            主题
+            <span class="caret"></span>
+        </button>
+        <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+            <li role="presentation" class="dropdown-header">下拉菜单标题</li>
+            <li role="presentation" >
+                <a role="menuitem" tabindex="-1" href="#">Java</a>
+            </li>
+            <li role="presentation">
+                <a role="menuitem" tabindex="-1" href="#">数据挖掘</a>
+            </li>
+            <li role="presentation">
+                <a role="menuitem" tabindex="-1" href="#">
+                    数据通信/网络
+                </a>
+            </li>
+            <li role="presentation" class="divider"></li>
+            <li role="presentation" class="dropdown-header">下拉菜单标题</li>
+            <li role="presentation">
+                <a role="menuitem" tabindex="-1" href="#">分离的链接</a>
+            </li>
+        </ul>
+    </div>
+    
+    <table cellspacing="0" id="table_All">
+        <tr style="color: rgb(105, 105, 105);">
+            <th>门类</th>
+            <th>专业类</th>
+            <th>专业名称</th>
+        </tr>
+        <tr>
+            <td>工学</td>
+            <td>计算机类</td>
+            <td>计算机科学与技术</td>
+        </tr>
+        <tr>
+            <td>工学</td>
+            <td>计算机类</td>
+            <td>软件工程</td>
+        </tr>
+        <tr>
+            <td>工学</td>
+            <td>计算机类</td>
+            <td>网络工程</td> 
+        </tr>
+        <tr>
+            <td>工学</td>
+            <td>计算机类</td>
+            <td>信息安全</td> 
+        </tr>
+        <tr>
+            <td>工学</td>
+            <td>计算机类</td>
+            <td>物联网工程</td> 
+        </tr>
+        
+        
+        
+    </table>
+</body>
+</html>

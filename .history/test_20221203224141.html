@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table id="tt" title="Checkbox Select" class="easyui-datagrid" style="width:550px;height:250px"
+    url="data/datagrid_data.json"
+    idField="itemid" pagination="true"
+    iconCls="icon-save">
+<thead>
+    <tr>
+        <th field="ck" checkbox="true"></th>
+        <th field="itemid" width="80">Item ID</th>
+        <th field="productid" width="80">Product ID</th>
+        <th field="listprice" width="80" align="right">List Price</th>
+        <th field="unitcost" width="80" align="right">Unit Cost</th>
+        <th field="attr1" width="100">Attribute</th>
+        <th field="status" width="60" align="center">Status</th>
+    </tr>
+</thead>
+</table>
+</body>
+</html>

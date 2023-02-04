@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+        *{
+            margin: 0;
+            padding: 0;
+            border: 0;
+        }
+        .main{
+            width: 1300px;
+            height: 760px;
+            /* border: 1px solid black; */
+            border-radius: 20px;
+            background-color: aliceblue;
+            opacity: 0.7;
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            margin: auto;
+            
+        }
+        .left{
+            width: 190px;
+            height: 760px;
+            border-radius: 20px 0px 0px 20px;
+            border-right: 3px solid rgba(146, 169, 213, 0.622);
+            /* border: 1px solid black; */
+            position: absolute;
+        }
+        .circle-point{
+            width: 100px;
+            height: 30px;
+            /* border: 1px solid black; */
+            margin-left: 25px;
+            margin-top: 15px;
+        }
+        .circle-point div{
+            width: 25px;
+            height: 25px;
+            border-radius: 100% 100% 100% 100%;
+            float: left;
+            opacity: 1;
+            /* position: absolute; */
+            margin-left: 5px;
+            
+        }
+        .button{
+            width: auto;
+            height: auto;
+            border: 1px solid black;
+        }
+        .button ul{
+            list-style-type: none;
+        }
+        .button button{
+            width: 90px;
+            height: 35px;
+        }
+    </style>
+</head>
+<body style="background-color: rgb(209, 222, 254);">
+    <div class="main">
+        <div class="left">
+            <div class="circle-point">
+                <div style="background-color: red;"></div>
+                <div style="background-color: orange;"></div>
+                <div style="background-color:rgb(116, 189, 7);"></div>
+            </div>
+            <div class="button">
+                
+                    <button>关注专业</button>
+                    <br>
+                    <button>产业数据统计</button>
+                    <br>
+                    <button>专业现状</button>
+                    <br>
+                    <button>未开设专业信息</button>
+                    <br>
+                    <button>历史记录</button>
+                    <button>退出登录</button>
+                
+            </div>
+            
+            
+            
+        </div>
+        
+    </div>
+</body>
+</html>

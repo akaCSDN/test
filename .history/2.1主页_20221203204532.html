@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scal=no">
+    <title>Document</title>
+    <script src="./JS/jquery-3.6.0.js"></script>
+    <style type="text/css">
+        *{
+            margin: 0;
+            padding: 0;
+            border: 0;
+        }
+        .main{
+            width: 1300px;
+            height: 760px;
+            /* border: 1px solid black; */
+            border-radius: 20px;
+            background-color: aliceblue;
+            opacity: 0.7;
+            position: fixed;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            margin: auto;
+            
+        }
+        .left{
+            width: 190px;
+            height: 760px;
+            border-radius: 20px 0px 0px 20px;
+            border-right: 3px solid rgba(146, 169, 213, 0.622);
+            /* border: 1px solid black; */
+            position: absolute;
+            margin-left: 100px;
+            margin-top: 16px;
+            position: fixed;
+        }
+        .circle-point{
+            width: 100px;
+            height: 30px;
+            /* border: 1px solid black; */
+            margin-left: 25px;
+            margin-top: 15px;
+        }
+        .circle-point div{
+            width: 25px;
+            height: 25px;
+            border-radius: 100% 100% 100% 100%;
+            float: left;
+            opacity: 1;
+            /* position: absolute; */
+            margin-left: 5px;
+            
+        }
+        .button{
+            width: auto;
+            height: auto;
+            /* border: 1px solid black; */
+            margin-top: 50px;
+            
+            
+        }
+        .button li{
+            list-style-type: none;
+            /* border: 1px solid black; */
+            margin-top: 25px;
+            width: 150px;
+            margin-left: 13px;
+            border-radius: 10px;
+            /* background-color: rgb(255, 255, 255); */
+            /* display:none ; */
+            
+        }
+        .button button{
+            width: 90px;
+            height: 35px;
+            text-align: left;
+            margin-left: 60px;
+            /* color: rgba(0, 94, 255, 0.909); */
+            color: #005EFF;
+            font-weight: 600;
+            /* margin-top: 30px; */
+            background: none;
+            pointer-events: fill;
+            
+            
+        }
+        .button img{
+            width: 17px;
+            height: 17px;
+            position: absolute;
+            margin-top: 8px;
+            margin-left: 25px;
+        }
+        #add{
+            background-color: #00ffa2;
+            width: 100px;
+            height: 50px;
+            transform: scale(0.7);
+        }
+    </style>
+</head>
+<body style="background-color: rgb(209, 222, 254);">
+    
+    <div class="main">
+    </div>
+    <div class="left">
+        <div class="circle-point">
+            <div style="background-color: red;"></div>
+            <div style="background-color: orange;"></div>
+            <div style="background-color:rgb(116, 189, 7);"></div>
+        </div>
+        <div class="button">
+                <li><img src="./icon/主页.png" alt=""><button>主页</button></li>
+                <li><img src="./icon/专业.png" alt=""><button>关注专业</button></li>
+                <li><img src="./icon/数据.png" alt=""><button>产业数据</button></li>
+                <li><img src="./icon/现状.png" alt=""><button>专业现状</button></li>
+                <li><img src="./icon/开设.png" alt=""><button>开设专业</button></li>
+                <li><img src="./icon/日历.png" alt=""><button>查看日历</button></li>
+                <li><img src="./icon/历史.png" alt=""><button>历史记录</button></li>
+                <li><img src="./icon/退出.png" alt=""><button>退出登录</button></li>
+                
+            
+        </div>
+        
+        
+        
+        
+    </div>
+
+    
+</body>
+<script>
+    $(document).ready(function(){
+            $(".button li").mouseover(function(){
+                $(this).css("background-color","white")
+                
+                
+        })
+        
+        $(".button li").mouseleave(function(){
+                $(this).css("background","none")
+        })
+        $(".button li").click(function(){
+                if($(this).v)
+        })
+        
+        
+        
+        
+    })
+</script>
+</html>

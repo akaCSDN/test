@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scal=no">
+    <title>Document</title>
+    <script src="./JS/jquery-3.6.0.js"></script>
+    <style type="text/css">
+        *{
+            margin: 0;
+            padding: 0;
+            border: 0;
+        }
+        @media screen and (min-width:320px) and (max-width:1156px){
+            .site-bg-dl {
+              position: fixed;
+              height: 100;
+              width: 100;
+              z-index: 0;
+              background-image: url(bjxzfwzx/images/bj1.webp);
+              background-size: cover;
+              background-repeat: no-repeat;
+              background-attachment: fixed;
+              background-size:100%;
+              -moz-background-size:100%;
+            }
+        }
+        .main{
+            width: 1300px;
+            height: 760px;
+            /* border: 1px solid black; */
+            border-radius: 20px;
+            background-color: rgb(255, 255, 255);
+            display: flex;
+            opacity: 0.7;
+            position: fixed;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            margin: auto;
+            
+        }
+        .left{
+            width: 190px;
+            height: 690px;
+            position: absolute;
+            /* top: 3.7%; */
+            /* border: 1px solid black; */
+            border-radius: 14px;
+            display: flex;
+            top: 6.2%;
+            background-color:white;
+            box-shadow: 0px 0px 20px rgb(241, 240, 240);
+            right: 72%;
+            bottom: 0;
+            left: 0;
+            margin: auto;
+            
+        }
+        .circle-point{
+            /* border: 1px solid black; */
+            position: absolute;
+            margin-top: 30px;
+            margin-left: 40px;
+        }
+        .circle-point div{
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+            float: left;
+            opacity: 1;
+            /* margin-left: 5px; */
+            
+        }
+        .button{
+            width: auto;
+            height: auto;
+            margin-top: 50px;
+            /* border: 1px solid black; */
+            position: absolute;
+            
+        }
+        .button div{
+            list-style-type: none;
+            margin-top: 25px;
+            width: 150px;
+            margin-left: 13px;
+            border-radius: 10px;
+        }
+        .button button{
+            width: 90px;
+            height: 35px;
+            text-align: left;
+            margin-left: 60px;
+            color: #005EFF;
+            font-weight: 600;
+            background: none;
+            pointer-events: fill;
+        }
+        .button img{
+            width: 17px;
+            height: 17px;
+            position: absolute;
+            margin-top: 8px;
+            margin-left: 25px;
+        }
+        .right{
+            width: 1060px;
+            height: 690px;
+            /* border: 1px solid black; */
+            position: fixed;
+            display: flex;
+            top: 6.2%;
+            right: 0;
+            bottom: 0;
+            left: 14.5%;
+            margin: auto;
+            box-shadow: 0px 0px 20px rgb(241, 240, 240);
+            background-color: white;
+            border-radius: 14px;
+        }
+        iframe{
+            scroll-behavior: auto;
+            height:au;
+            display: none;
+            border-radius: 14px;
+        }
+
+
+        .login_page{
+            width: 1300px;
+            height: 50px;
+            position: absolute;
+            background-color: rgb(255, 255, 255);
+            display: flex;
+            box-shadow: 0px 0px 20px rgb(241, 240, 240);
+            margin-left: 6.5%;
+            margin-top: 2%;
+            /* borra */
+
+        }
+        .logo span{
+            margin-left: 90px;
+            font-size: 21px;
+            padding-top: 10px;
+            position: absolute;
+        }
+        .logo img{
+            width: 50px;
+            height: 50px;
+            position: absolute;
+            margin-left: 3%;
+        }
+
+        .login_page div{
+            float: left;
+        }
+        .title_icon{
+            position: absolute;
+            margin-left: 60%;
+            margin-top: 0.4%;
+        }
+        .title_icon img{
+            width: 25px;
+            height: 25px;
+            float: left;
+            /* position: absolute; */
+            margin-top: 10px;
+            padding-left: 30px;
+        }
+        input{
+            width: 180px;
+            height: 26px;
+            border: 1px solid black;
+            border-radius: 10px;
+            position: absolute;
+            margin-top: 1.5%;
+        }
+    </style>
+</head>
+<body style="background-color: #F7DE5F;">
+    
+    <div class="main">
+        
+
+    </div>
+    <!-- 上边导航栏框架 -->
+
+    <div class="login_page">
+
+        <!-- logo设置 -->
+        <div class="logo">
+            <img src="./icon/趣盒-icon_我的会员.png" alt="">
+            <span>Sum Ack</span>
+        </div>
+
+        <!-- 图标设置 -->
+        <div class="title_icon">
+            <input type="text" >
+            <img src="./icon/搜索.png" alt="" style="margin-left: 180px;">
+            <img src="./icon/设置-线性.png" alt="">
+            <img src="./icon/nav_icon_消息通知.png" alt="">
+            <img src="./icon/nav_icon_程序设置.png" alt="">
+            <img src="./icon/用户中心.png" alt="">
+        </div>
+    </div>
+
+
+    <!-- 左边框架 -->
+    <div class="left">
+        <div class="circle-point">
+            <div style="background-color: red;"></div>
+            <div style="background-color: orange;">&nbsp;&nbsp;&nbsp;</div>
+            <div style="background-color:rgb(116, 189, 7);">&nbsp;&nbsp;&nbsp;</div>
+        </div>
+        <div class="button">
+                <div class="button1"><img src="./icon/主页.png" alt=""><button>主页</button></div>
+                <div class="button2"><img src="./icon/专业.png" alt=""><button>关注专业</button></div>
+                <div class="button3"><img src="./icon/数据.png" alt=""><button>产业数据</button></div>
+                <div class="button4"><img src="./icon/现状.png" alt=""><button>专业现状</button></div>
+                <div class="button5"><img src="./icon/开设.png" alt=""><button>未设专业</button></div>
+                <div class="button6"><img src="./icon/日历.png" alt=""><button>查看日历</button></div>
+                <div class="button7"><img src="./icon/设置-线性 (2).png" alt=""><button>用户设置</button></div>
+                <div class="button8"><img src="./icon/退出.png" alt=""><button>退出登录</button></div>
+        </div> 
+    </div>
+    <div>
+
+    </div>
+
+
+
+
+    <!-- 右边框架 -->
+    <div class="right">
+        <iframe id="iframe2" src="./page1.html" frameborder="0" width="100%"></iframe>
+        <iframe id="iframe3" src="./test2.html" frameborder="0" width="100%"></iframe>
+        <iframe id="iframe4" src="./3.html" frameborder="0" width="100%"></iframe>
+        <iframe id="iframe5" src="./4.html" frameborder="0" width="100%"></iframe>
+    </div>
+    
+    
+</body>
+<script>
+    $(document).ready(function(){
+        $(".button div").mouseover(function(){
+                $(this).css("background-color","white")
+        })
+        $(".button div").mousedown(function(){
+                $(this).css("transform","scale(.9)")
+        })
+        $(".button div").mouseup(function(){
+                $(this).css("background","none").css("transform","scale(1)")
+        })
+        $(".button div").mouseout(function(){
+                $(this).css("background","none").css("transform","scale(1)")
+        })
+        $(".button div").mouseleave(function(){
+                $(this).css("background","none").css("transform","scale(1)")
+        })
+        $(".button div").click(function(){
+            // console.log(this);
+            // var name = "./" + this.className.replace("button","") + ".html"
+            // console.log(name);
+            var i = "#iframe" + this.className.replace("button","")
+            $(".right iframe").css("display","none");
+            $(i).css("display","block")
+        })
+            
+    })
+</script>
+</html>

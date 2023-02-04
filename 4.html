@@ -1,0 +1,689 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+        * {
+            padding: 0;
+            margin: 0;
+            border: 0;
+        }
+
+        .open_major {
+            position: relative;
+        }
+
+        .digital_media {
+            width: 230px;
+            height: 190px;
+            /* border: 1px solid rgb(188, 186, 186); */
+            background-color: white;
+            box-shadow: 0px 0px 20px rgb(211, 211, 211);
+            position: absolute;
+            border-radius: 10px;
+            /* margin: 20px; */
+            margin-left: 30px;
+            margin-top: 10%;
+        }
+
+        .digital_media img {
+            width: 25px;
+            height: 25px;
+            margin: 4%;
+            position: absolute;
+        }
+
+        .digital_media span {
+            position: absolute;
+            /* padding-left: 30px; */
+            margin-left: 20%;
+            margin-top: 5%;
+            font-weight: bolder;
+        }
+
+        .digital_media p {
+            position: absolute;
+            margin-left: 10%;
+            font-size: 5px;
+            color: #606266;
+            /* font-weight: lighter; */
+            margin-top: 12%;
+            width: 180px;
+        }
+
+        .button {
+            /* position: absolute; */
+            margin-top: 50%;
+            margin-left: 10%;
+            /* padding: 30px; */
+            margin-bottom: 2%;
+        }
+
+        .button a {
+            width: 86px;
+            height: 34px;
+            border: 2px solid #2d8cf0;
+            background-color: white;
+            color: #2d8cf0;
+            border-radius: 10px;
+            padding: 5px;
+            font-size: 10px;
+            font-weight: bold;
+
+        }
+
+        .click-bg {
+            /* background:rgba(0, 0, 0, .3) ; */
+            /* background-image: linear-gradient(120deg, #c8daf8 0%, #c2e9fb 100%); */
+            background-color: white;
+            width: 230px;
+            height: 190px;
+            position: absolute;
+            border-radius: 10px;
+            /* margin: 10%; */
+            margin-top: 10%;
+            margin-left: 30px;
+            /* display: none; */
+
+        }
+
+        .click-bg span {
+            position: absolute;
+            /* padding-left: 30px; */
+            margin-left: 23%;
+            margin-top: 5%;
+            color: #383b3e;
+            font-weight: bolder;
+            font-size: larger;
+        }
+
+        .click-bg img {
+            width: 120px;
+            height: 120px;
+            margin-top: 20%;
+            margin-left: 23%;
+
+        }
+
+
+
+        /* 第二个框 */
+        .science_technology {
+            width: 230px;
+            height: 190px;
+            /* border: 1px solid rgb(188, 186, 186); */
+            background-color: white;
+            box-shadow: 0px 0px 20px rgb(211, 211, 211);
+            position: absolute;
+            border-radius: 10px;
+            /* margin: 20%; */
+            margin-left: 270px;
+            margin-top: 10%;
+        }
+
+        .science_technology img {
+            width: 25px;
+            height: 25px;
+            margin: 4%;
+            position: absolute;
+        }
+
+        .science_technology span {
+            position: absolute;
+            /* padding-left: 30px; */
+            margin-left: 20%;
+            margin-top: 5%;
+            font-weight: bolder;
+        }
+
+        .science_technology p {
+            position: absolute;
+            margin-left: 10%;
+            font-size: 5px;
+            color: #606266;
+            /* font-weight: lighter; */
+            margin-top: 12%;
+            width: 180px;
+        }
+
+        .button {
+            /* position: absolute; */
+            margin-top: 50%;
+            margin-left: 10%;
+            /* padding: 30px; */
+            margin-bottom: 2%;
+        }
+
+        .button a {
+            width: 86px;
+            height: 34px;
+            border: 2px solid #2d8cf0;
+            background-color: white;
+            color: #2d8cf0;
+            border-radius: 10px;
+            padding: 5px;
+            font-size: 10px;
+            font-weight: bold;
+
+        }
+
+        .click-bg2 {
+            /* background:rgba(0, 0, 0, .3) ; */
+            /* background-image: linear-gradient(120deg, #c8daf8 0%, #c2e9fb 100%); */
+            background-color: white;
+            width: 230px;
+            height: 190px;
+            position: absolute;
+            border-radius: 10px;
+            /* margin: 20%; */
+            margin-left: 270px;
+            margin-top: 10%;
+            /* display: none; */
+
+        }
+
+        .click-bg2 span {
+            position: absolute;
+            /* padding-left: 30px; */
+            margin-left: 23%;
+            margin-top: 5%;
+            color: #383b3e;
+            font-weight: bolder;
+            font-size: larger;
+        }
+
+        .click-bg2 img {
+            width: 120px;
+            height: 120px;
+            margin-top: 20%;
+            margin-left: 23%;
+
+        }
+
+        /* 第三个框 */
+        .spatial_information {
+            width: 230px;
+            height: 190px;
+            /* border: 1px solid rgb(188, 186, 186); */
+            background-color: white;
+            box-shadow: 0px 0px 20px rgb(211, 211, 211);
+            position: absolute;
+            border-radius: 10px;
+            /* margin: 20%; */
+            margin-left: 510px;
+            margin-top: 10%;
+        }
+
+        .spatial_information img {
+            width: 25px;
+            height: 25px;
+            margin: 4%;
+            position: absolute;
+        }
+
+        .spatial_information span {
+            position: absolute;
+            /* padding-left: 30px; */
+            margin-left: 20%;
+            margin-top: 5%;
+            font-weight: bolder;
+        }
+
+        .spatial_information p {
+            position: absolute;
+            margin-left: 10%;
+            font-size: 5px;
+            color: #606266;
+            /* font-weight: lighter; */
+            margin-top: 12%;
+            width: 180px;
+        }
+
+        .button {
+            margin-top: 50%;
+            margin-left: 10%;
+            /* padding: 30px; */
+            margin-bottom: 2%;
+        }
+
+        .button a {
+            width: 86px;
+            height: 34px;
+            border: 2px solid #2d8cf0;
+            background-color: white;
+            color: #2d8cf0;
+            border-radius: 10px;
+            padding: 5px;
+            font-size: 10px;
+            font-weight: bold;
+
+        }
+
+        .click-bg3 {
+            /* background:rgba(0, 0, 0, .3) ; */
+            /* background-image: linear-gradient(120deg, #c8daf8 0%, #c2e9fb 100%); */
+            background-color: white;
+            width: 230px;
+            height: 190px;
+            position: absolute;
+            border-radius: 10px;
+            /* margin: 20%; */
+            margin-left: 510px;
+            margin-top: 10%;
+            /* display: none; */
+
+        }
+
+        .click-bg3 span {
+            position: absolute;
+            /* padding-left: 30px; */
+            margin-left: 23%;
+            margin-top: 5%;
+            color: #383b3e;
+            font-weight: bolder;
+            font-size: larger;
+        }
+
+        .click-bg3 img {
+            width: 120px;
+            height: 120px;
+            margin-top: 20%;
+            margin-left: 23%;
+
+        }
+
+
+        /* 第四个框 */
+        .new_media {
+            width: 230px;
+            height: 190px;
+            /* border: 1px solid rgb(188, 186, 186); */
+            background-color: white;
+            box-shadow: 0px 0px 20px rgb(211, 211, 211);
+            position: absolute;
+            border-radius: 10px;
+            /* margin: 20%; */
+            margin-left: 750px;
+            margin-top: 10%;
+        }
+
+        .new_media img {
+            width: 25px;
+            height: 25px;
+            margin: 4%;
+            position: absolute;
+        }
+
+        .new_media span {
+            position: absolute;
+            /* padding-left: 30px; */
+            margin-left: 20%;
+            margin-top: 5%;
+            font-weight: bolder;
+        }
+
+        .new_media p {
+            position: absolute;
+            margin-left: 10%;
+            font-size: 5px;
+            color: #606266;
+            /* font-weight: lighter; */
+            margin-top: 12%;
+            width: 180px;
+        }
+
+        .button {
+            margin-top: 50%;
+            margin-left: 10%;
+            /* padding: 30px; */
+            margin-bottom: 2%;
+        }
+
+        .button a {
+            width: 86px;
+            height: 34px;
+            border: 2px solid #2d8cf0;
+            background-color: white;
+            color: #2d8cf0;
+            border-radius: 10px;
+            padding: 5px;
+            font-size: 10px;
+            font-weight: bold;
+            text-decoration: none;
+
+        }
+        .button button {
+            width: 86px;
+            height: 34px;
+            border: 2px solid #2d8cf0;
+            background-color: white;
+            color: #2d8cf0;
+            border-radius: 10px;
+            padding: 5px;
+            font-size: 10px;
+            font-weight: bold;
+            text-decoration: none;
+
+        }
+
+        .click-bg4 {
+            /* background:rgba(0, 0, 0, .3) ; */
+            /* background-image: linear-gradient(120deg, #c8daf8 0%, #c2e9fb 100%); */
+            background-color: white;
+            width: 230px;
+            height: 190px;
+            position: absolute;
+            border-radius: 10px;
+            /* margin: 20%; */
+            margin-left: 750px;
+            margin-top: 10%;
+            /* display: none; */
+
+        }
+
+        .click-bg4 span {
+            position: absolute;
+            /* padding-left: 30px; */
+            margin-left: 23%;
+            margin-top: 5%;
+            color: #383b3e;
+            font-weight: bolder;
+            font-size: larger;
+        }
+
+        .click-bg4 img {
+            width: 120px;
+            height: 120px;
+            margin-top: 20%;
+            margin-left: 23%;
+
+        }
+
+        .click_event {
+            display: block;
+        }
+
+
+        /* 关闭背景 */
+        .close_bg{
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            background: rgba(0, 0, 0, .3);
+            /* z-index: -1; */
+            display: none;
+
+        }
+
+
+        /* 对话框 */
+        .dialog_page{
+            min-height: 150px;
+            overflow-y: auto;
+            max-height: 400px;
+            box-shadow: 0px 0px 20px #ddd;
+
+            background-color: white;
+            position: absolute;
+            margin: 10% 20%;
+            /* display: none; */
+            z-index: 999;
+            display: none;
+            border-radius: 10px;
+        }
+        .dialog_page::-webkit-scrollbar {
+            width: 4px;
+            background-color: #fff;
+        }
+
+        .dialog_page::-webkit-scrollbar-thumb {
+            background-color: #2d8cf0;
+            /* background-color: #f81234; */
+        }
+
+        .dialog_page table {
+            margin: 5%;
+            height: 70px;
+            width: auto;
+            /* border: 1px solid black; */
+
+        }
+        .dialog_page table th,
+        td {
+            width: 3%;
+            height: 10px;
+            /* overflow: hidden; */
+            text-align: center;
+            /* border-bottom:1px dashed #409EFF; */
+        }
+        .dialog_page table td ,th{
+            border-bottom: 1px dashed #000000;
+        }
+
+        .close_btn {
+            background-color: #409EFF;
+            width: 120px;
+            height: 36px;
+            border: #409EFF;
+            color: white;
+            margin-left: 40%;
+            margin-top: 5%;
+            margin-bottom: 5%;
+            border-radius: 10px;
+            
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <!-- <h1>未开设专业</h1> -->
+    <div class="open_major">
+
+        <div class="digital_media">
+            <img src="./icon/开始.png" alt="">
+            <span>数字媒体技术</span>
+            <br>
+            <p>数字媒体技术是一门普通高等学校本科专业，属计算机类专业，基本修业年限为四年，授予工学学士学位.</p>
+            <div class="button">
+                <a href="http://so.moe.gov.cn/s?siteCode=bm05000001&tab=all&qt=%E6%95%B0%E5%AD%97%E5%AA%92%E4%BD%93%E6%8A%80%E6%9C%AF">教育部资料</a>
+                <button class="Button ">相关产业信息</button>
+            </div>
+        </div>
+
+        <div class="click-bg click_event">
+            <span>数字媒体技术</span>
+            <img src="./icon/8_app-builder-rbs.png" alt="">
+        </div>
+
+
+        <div class="science_technology">
+            <img src="./icon/鼠标.png" alt="">
+            <span>智能科学与技术</span>
+            <br>
+            <p>数字媒体技术是一门普通高等学校本科专业，属计算机类专业，基本修业年限为四年，授予工学学士学位.</p>
+            <div class="button">
+                <a href="http://so.moe.gov.cn/s?qt=%E6%99%BA%E8%83%BD%E7%A7%91%E5%AD%A6%E4%B8%8E%E6%8A%80%E6%9C%AF&siteCode=bm05000001&tab=all&sitePath=true&toolsStatus=1">教育部资料</a>
+                <button class="Button">相关产业信息</button>
+            </div>
+        </div>
+
+        <div class="click-bg2 click_event">
+            <span>智能科学与技术</span>
+            <img src="./icon/26_cloud-communication-im.png" alt="">
+        </div>
+        <!-- 第三个框 -->
+        <div class="spatial_information">
+            <img src="./icon/网页.png" alt="">
+            <span>空间信息技术</span>
+            <br>
+            <p>数字媒体技术是一门普通高等学校本科专业，属计算机类专业，基本修业年限为四年，授予工学学士学位.</p>
+            <div class="button">
+                <a href="http://so.moe.gov.cn/s?qt=%E7%A9%BA%E9%97%B4%E4%BF%A1%E6%81%AF%E6%8A%80%E6%9C%AF&siteCode=bm05000001&tab=all&sitePath=true&toolsStatus=1">教育部资料</a>
+                <button class="Button" >相关产业信息</button>
+            </div>
+        </div>
+
+        <div class="click-bg3 click_event">
+            <span>空间信息技术</span>
+            <img src="./icon/8_app-builder-rbs.png" alt="">
+        </div>
+        <!-- 第四个框 -->
+        <div class="new_media">
+            <img src="./icon/微信.png" alt="">
+            <span>新媒体技术</span>
+            <br>
+            <p>数字媒体技术是一门普通高等学校本科专业，属计算机类专业，基本修业年限为四年，授予工学学士学位.</p>
+            <div class="button">
+                <a href="http://so.moe.gov.cn/s?qt=%E6%96%B0%E5%AA%92%E4%BD%93%E6%8A%80%E6%9C%AF&siteCode=bm05000001&tab=all&sitePath=true&toolsStatus=1">教育部资料</a>
+                <button class="Button">相关产业信息</button>
+            </div>
+        </div>
+        <div class="click-bg4 click_event">
+            <span>新媒体技术</span>
+            <img src="./icon/26_cloud-communication-im.png" alt="">
+        </div>
+
+    </div>
+
+
+    <div class="dialog_page">
+        <table>
+            <thead>
+                <tr>
+                    <th>序号</th>
+                    <th>企业</th>
+                    <th>岗位</th>
+                    <th>技能</th>
+                    <th>任务</th>
+                    <th>最低薪酬</th>
+                    <th>最高薪酬</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+
+        <button class="close_btn" style="text-align: center;">
+            关闭
+        </button>
+    </div>
+
+    <div class="close_bg">
+
+    </div>
+    <script type="text/javascript">
+       window.onload=function(){
+        var click_event=document.getElementsByClassName("click_event");
+            for(var i in click_event){
+                click_event[i].onmouseover=redback;
+                click_event[i].onmouseout=noredback;
+                // console.log(click_event[i])
+            }
+            function redback()
+            {
+                this.style.display="none";
+
+            }
+            function noredback(clear)
+            {
+
+                this.style.display="block";
+                // clear.style.backgroundColor="white"
+
+            }
+            //获取相关信息
+            //先建立数据
+            var dataList=[{
+                enterprise:200,
+                position:120,
+                skills:201,
+                tasks:10,
+                min_money:3000,
+                max_money:6000
+            },{
+                enterprise:20,
+                position:10,
+                skills:1,
+                tasks:1,
+                min_money:3500,
+                max_money:7800
+            },{
+                enterprise:210,
+                position:112,
+                skills:211,
+                tasks:18,
+                min_money:6700,
+                max_money:12300
+            },{
+                enterprise:20,
+                position:11,
+                skills:21,
+                tasks:18,
+                min_money:9500,
+                max_money:21300
+            }]
+
+            //
+            // 获取button元素
+            var button_1=document.getElementsByClassName("Button");
+            // var button_2=document.getElementsByTagName("button")
+            // console.log(button_2)
+            
+        
+            // for (var  i = 0; i < button_1.length; i++) {
+            //     button_1[i].addEventListener("click",dialog_button)
+            //     // console.log(button_1[i])
+                
+            // }
+
+
+            for (let i = 0; i < button_1.length; i++) {
+                button_1[i].onclick=function(){
+                    var dialog_page=document.querySelector(".dialog_page")
+                    var close_bg=document.querySelector(".close_bg");
+                    dialog_page.style.display="block";
+                    close_bg.style.display="block";
+
+                    var tbody=document.querySelector("tbody");
+                    var tr=document.createElement("tr");
+                    var td=document.createElement("td");
+                    td.innerHTML=1;
+                    tr.appendChild(td);
+                    for (var key in dataList[i]) {
+                        td=document.createElement("td")
+                        td.innerHTML=dataList[i][key];
+                        tr.appendChild(td)
+                    }
+                    tbody.appendChild(tr)
+
+                    // 关闭按钮
+                    var close_btn=document.querySelector(".close_btn");
+                    close_btn.addEventListener('click',function(){
+                        dialog_page.style.display="none";
+                        close_bg.style.display="none";
+                        td.parentElement.remove()
+                    })
+                }
+                
+            }
+       }
+            
+            //点击事件
+            // function dialog_button(i){
+                
+
+            // }
+        
+        
+    </script>
+</body>
+
+</html>
